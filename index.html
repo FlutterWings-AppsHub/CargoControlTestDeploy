@@ -35,7 +35,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3792218118";
+    const serviceWorkerVersion = "3843581185";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -56,5 +56,31 @@
       });
     });
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js"></script>
+
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getFunctions } from "firebase/functions";
+
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: 'AIzaSyAxrlWlMRomwMemNoh8ONnJ5PmdzPT5yPA',
+    authDomain: 'cargocontrol-d5ef8.firebaseapp.com',
+    projectId: 'cargocontrol-d5ef8',
+    storageBucket: 'cargocontrol-d5ef8.appspot.com',
+    messagingSenderId: '808141670120',
+    appId: '1:808141670120:web:89244d1be4228043b12b5d'
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 </body>
 </html>
